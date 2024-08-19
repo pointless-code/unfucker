@@ -8,7 +8,7 @@ UnF*cker scrubs your text clean of those unwanted F-bombs. Whether it's a file o
 
 ```bash
 docker pull pointlesscode/unfucker:latest
-docker run --rm -v $(pwd):/usr/src/app pointlesscode --file your_text_file.txt
+docker run --rm -v $(pwd):/usr/src/app pointlesscode/unfucker --file your_text_file.txt
 
 # or pass your text
 
@@ -20,7 +20,7 @@ docker run --rm unfucker --text "Your text."
 - build and run the image
 ```bash
 docker build -t unfucker .
-docker run --rm -v $(pwd):/usr/src/app pointlesscode --file your_text_file.txt
+docker run --rm -v $(pwd):/usr/src/app pointlesscode/unfucker --file your_text_file.txt
 
 # or pass your text
 
