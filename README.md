@@ -12,7 +12,7 @@ docker run --rm -v $(pwd):/usr/src/app pointlesscode/unfucker --file your_text_f
 
 # or pass your text
 
-docker run --rm unfucker --text "Your text."
+docker run --rm pointlesscode/unfucker --text "Your text."
 ```
 
 ## Build it yourself
@@ -20,7 +20,7 @@ docker run --rm unfucker --text "Your text."
 - build and run the image
 ```bash
 docker build -t unfucker .
-docker run --rm -v $(pwd):/usr/src/app pointlesscode/unfucker --file your_text_file.txt
+docker run --rm -v $(pwd):/usr/src/app unfucker --file your_text_file.txt
 
 # or pass your text
 
